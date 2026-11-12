@@ -9,222 +9,194 @@
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-<div id="customCursor" aria-hidden="true"><span>View</span></div>
 
-<header class="header header--paper header--wide" id="siteHeader">
-  <div class="header__wrapper">
-    <nav aria-label="Main">
-      <a class="header__logo-container" href="index.html" aria-label="Queen's Bakery — home">
-        <img class="header__logo" src="assets/img/queens-logo.png" alt="Queen's Bakery crown logo">
-        <span class="header__wordmark">Queen's Bakery<small>Chinatown · 皇后餅家</small></span>
-      </a>
-      <div class="header__navigation">
-        <span class="nav-item"><a href="index.html">Home</a></span>
-        <span class="nav-item"><a href="index.html#poster-rice-puffs">Specialties</a></span>
-        <span class="nav-item"><a href="shop.html">Shop</a></span>
-        <span class="nav-item"><a href="index.html#visit">Visit</a></span>
-        <span class="nav-item"><a href="index.html#about">About Us</a></span>
-      </div>
-      <div class="header__right">
-        <span class="header__place">Los Angeles · Chinatown</span>
-        <button class="contact-postcard-cta cart-toggle" id="cartToggle" type="button" style="background:transparent;cursor:pointer">
-          <span class="contact-postcard-cta__label">Cart</span><span class="contact-postcard-cta__kanji">餅</span>
-          <span class="cart-count" id="cartCount" hidden>0</span>
-        </button>
-      </div>
-      <div class="header__navigation-mobile">
-        <button class="header__menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
-      </div>
+<header class="header" id="siteHeader">
+  <div class="header__in">
+    <a class="header__brand" href="index.html" aria-label="Queen's Bakery — home">
+      <img src="assets/img/queens-logo.png" alt="Queen's Bakery crown logo">
+      <span><b>Queen's Bakery</b><small>Chinatown · Est. 1961</small></span>
+    </a>
+    <nav class="header__nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="index.html#famous">Famous For</a>
+      <a href="shop.html">Shop</a>
+      <a href="index.html#cakes">Custom Cakes</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#faq">FAQ</a>
     </nav>
-  </div>
-  <div class="nav-dropdown-mobile" id="mobileMenu">
-    <div class="nav-dropdown-mobile__links">
-      <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="index.html#visit">Visit</a><a href="index.html#about">About Us</a><a href="index.html#faq">FAQ</a>
+    <div class="header__right">
+      <span class="hours-chip"><i></i>Open today · 8:30 AM – 6:30 PM</span>
+      <button class="btn cart-toggle" id="cartToggle" type="button"><span>Your box</span><span class="brush">餅</span><span class="cart-count" id="cartCount" hidden>0</span></button>
+      <button class="header__burger" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
-    <button class="contact-postcard-cta" id="cartToggleMobile" type="button" style="background:transparent;cursor:pointer;width:100%"><span class="contact-postcard-cta__label">Open cart</span><span class="contact-postcard-cta__kanji">餅</span></button>
   </div>
 </header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="index.html#famous">Famous For</a>
+  <a href="shop.html">Shop</a>
+  <a href="index.html#cakes">Custom Cakes</a>
+  <a href="index.html#about">About</a>
+  <button class="btn" id="cartToggleMobile" type="button"><span>Open your box</span><span class="brush">餅</span></button>
+</div>
 
-<main class="paper-page">
+<main>
   <section class="shop-hero">
-    <div class="petals" data-petals aria-hidden="true"></div>
-    <h1 class="p-title p-title--section" data-reveal>
-      <span class="p-title__line-mask" style="--line:1"><span>The shop</span></span>
-      <span class="p-title__line-mask" style="--line:2"><span><em>order the original</em></span></span>
-    </h1>
-    <p class="shop-hero__sub">One bake travels: the Original Chinese Rice Puffs, boxed at 809 N Broadway and shipped to your door. Everything else is fresh at the counter — come and get it.</p>
-    <ul class="shop-hero__meta">
-      <li>Minimum 3 boxes online</li>
-      <li>Free shipping on 6+</li>
-      <li>Open daily 8:30 AM – 6:30 PM</li>
-    </ul>
-  </section>
-
-  <section class="shop-grid-section" aria-label="Products">
-    <div class="shop-grid">
-
-      <article class="work-postcard shop-card" data-product="rice-puffs">
-        <span class="work-postcard__copy">
-          <span class="work-postcard__title"><span>Original Chinese Rice Puffs</span></span>
-          <span class="work-postcard__description">西騎馬 — fried flour and egg in simple syrup, sesame and coconut. The box that says The Crowning Touch. 12 oz.</span>
-          <span class="work-postcard__scope"><li>Online</li><li>Ships nationwide</li><li>Since 1961</li></span>
-          <span class="price-row">
-            <span class="price">$10.25 <small>/ box</small></span>
-            <span class="tag tag--sakura">Free shipping 6+</span>
-          </span>
-          <span class="price-row">
-            <span class="qty" aria-label="Quantity">
-              <button type="button" data-qty="-1" aria-label="One less box">−</button>
-              <output id="puffQty">3</output>
-              <button type="button" data-qty="1" aria-label="One more box">+</button>
-            </span>
-            <button class="add-btn" id="addPuffs" type="button"><span class="label">Add to cart</span><span class="kanji">馬</span></button>
-          </span>
-          <span class="note">Minimum order 3 boxes — the same rule as our own online shop.</span>
-        </span>
-        <span class="work-postcard__art"><img class="work-postcard__background" src="assets/img/queens-1-web.jpg" alt="Queen's Bakery rice puffs beside their box"></span>
-      </article>
-
-      <article class="work-postcard shop-card">
-        <span class="work-postcard__copy">
-          <span class="work-postcard__title"><span>Almond Cookies</span></span>
-          <span class="work-postcard__description">The famous red-and-white box. Crisp, golden, full of almond.</span>
-          <span class="work-postcard__scope"><li>Best seller</li><li>Store only</li></span>
-          <span class="price-row"><span class="price">$9.50*</span><span class="tag tag--red">Not for delivery</span></span>
-          <span class="note">Almond cookies are not available for delivery — pick them up at 809 N Broadway.</span>
-        </span>
-        <span class="work-postcard__art"><img class="work-postcard__background" src="assets/img/almond-cookies.jpg" alt="Chinese almond cookies"></span>
-      </article>
-
-      <article class="work-postcard shop-card">
-        <span class="work-postcard__copy">
-          <span class="work-postcard__title"><span>Egg Custard Tarts</span></span>
-          <span class="work-postcard__description">Silky custard, flaky shell. Out of the oven every morning.</span>
-          <span class="work-postcard__scope"><li>Fresh daily</li><li>Store only</li></span>
-          <span class="price-row"><span class="tag">In store</span></span>
-          <span class="note">Come early — the morning trays go fast.</span>
-        </span>
-        <span class="work-postcard__art"><img class="work-postcard__background" src="assets/img/egg-tarts.jpg" alt="Egg custard tarts"></span>
-      </article>
-
-      <article class="work-postcard shop-card">
-        <span class="work-postcard__copy">
-          <span class="work-postcard__title"><span>Cream Puffs</span></span>
-          <span class="work-postcard__description">Light shells with generous cream — the tea-time order.</span>
-          <span class="work-postcard__scope"><li>Fresh daily</li><li>Cafe favourite</li></span>
-          <span class="price-row"><span class="tag">In store</span></span>
-        </span>
-        <span class="work-postcard__art"><img class="work-postcard__background" src="assets/img/cream-puff.jpg" alt="Cream puff"></span>
-      </article>
-
-      <article class="work-postcard shop-card">
-        <span class="work-postcard__copy">
-          <span class="work-postcard__title"><span>Strawberry Shortcake</span></span>
-          <span class="work-postcard__description">The slice people cross Chinatown for — soft sponge, cream, strawberries.</span>
-          <span class="work-postcard__scope"><li>By the slice</li><li>Whole cakes</li></span>
-          <span class="price-row"><span class="tag">In store</span></span>
-        </span>
-        <span class="work-postcard__art"><img class="work-postcard__background" src="assets/img/shortcake.jpg" alt="Strawberry shortcake"></span>
-      </article>
-
-      <article class="work-postcard shop-card">
-        <span class="work-postcard__copy">
-          <span class="work-postcard__title"><span>Custom Birthday Cakes</span></span>
-          <span class="work-postcard__description">Fresh fruit cakes, fresh and not too sweet. Tell us the occasion — we bake for it.</span>
-          <span class="work-postcard__scope"><li>Order ahead</li><li>By phone</li></span>
-          <span class="price-row"><span class="price">from $25*</span></span>
-          <span class="price-row"><a class="call-btn" href="tel:+12136229749"><span class="label">Call to order</span></a></span>
-        </span>
-        <span class="work-postcard__art"><img class="work-postcard__background" src="assets/img/birthday-cake.jpg" alt="Fresh fruit birthday cake"></span>
-      </article>
-
-      <article class="work-postcard shop-card">
-        <span class="work-postcard__copy">
-          <span class="work-postcard__title"><span>Red Bean Mooncakes</span></span>
-          <span class="work-postcard__description">For the Mid-Autumn Festival — golden crust, smooth red bean heart.</span>
-          <span class="work-postcard__scope"><li>Seasonal</li><li>Store only</li></span>
-          <span class="price-row"><span class="price">$8.75*</span><span class="tag">Seasonal</span></span>
-        </span>
-        <span class="work-postcard__art"><img class="work-postcard__background" src="assets/img/mooncakes.jpg" alt="Mooncake cut open"></span>
-      </article>
-
-      <article class="work-postcard shop-card">
-        <span class="work-postcard__copy">
-          <span class="work-postcard__title"><span>Wintermelon Pastry</span></span>
-          <span class="work-postcard__description">Flaky pastry, gentle wintermelon heart — the quiet classic.</span>
-          <span class="work-postcard__scope"><li>Fresh daily</li><li>Store only</li></span>
-          <span class="price-row"><span class="price">$3.25*</span></span>
-          <span class="note">Morning breads from $3.00* — red bean and egg custard breads on the same trays.</span>
-        </span>
-        <span class="work-postcard__art"><img class="work-postcard__background" src="assets/img/wintermelon.jpg" alt="Wintermelon pastry"></span>
-      </article>
-
+    <p class="sec__kick">The shop</p>
+    <h1 style="margin-top:14px">Take the <em>crown</em><br>home with you</h1>
+    <p>One bake travels: the Original Chinese Rice Puffs, boxed at 809 N Broadway and shipped to your door. Everything else is fresh at the counter — come and get it. All photos are our own, from the bakery.</p>
+    <div class="shop-meta">
+      <span>Minimum <b>3 boxes</b> online</span>
+      <span>Free shipping on <b>6+</b></span>
+      <span>Almond cookies <b>in store only</b></span>
     </div>
-    <p class="note" style="max-width:1060px;margin:1.6rem auto 0">* Prices marked with a star were read from price signs in photos taken inside the store (2024–2026). Please call <a href="tel:+12136229749">+1 213-622-9749</a> to confirm today's price. The rice puff price, minimum and free-shipping rule are from the bakery's own online shop.</p>
   </section>
 
-  <section class="shipping-tickets" aria-label="Shipping">
-    <h2 class="p-title p-title--section" data-reveal>
-      <span class="p-title__line-mask" style="--line:1"><span>Shipping, <em>the simple way</em></span></span>
-    </h2>
-    <div class="shipping-tickets__grid">
-      <div class="ticket"><span class="big">3</span><h3>Box minimum</h3><p>Online orders start at three boxes of rice puffs — the bakery's own rule.</p></div>
-      <div class="ticket"><span class="big">6+</span><h3>Free shipping</h3><p>Order six boxes or more and shipping is free, anywhere they travel.</p></div>
-      <div class="ticket"><span class="big">809</span><h3>Everything else, in store</h3><p>Almond cookies are never shipped. Tarts, puffs and cakes wait at 809 N Broadway, daily 8:30–6:30.</p></div>
+  <section class="shop-grid" aria-label="Products">
+    <article class="p-card">
+      <figure><img src="assets/img/puffs.jpg" alt="Queen's Bakery rice puffs stacked on a plate"></figure>
+      <div class="p-card__body">
+        <h3>Original Chinese Rice Puffs <span class="cn">西騎馬</span></h3>
+        <p>Fried flour and egg in simple syrup, with sesame and coconut. The box that says The Crowning Touch. 12 oz.</p>
+        <div class="p-card__tags"><span class="hot">Ships nationwide</span><span>Since 1961</span></div>
+        <div class="p-card__foot">
+          <span class="price">$10.25 <small>/ box</small></span>
+          <span class="qty" aria-label="Quantity">
+            <button type="button" data-qty="-1" aria-label="One less box">−</button>
+            <output id="puffQty">3</output>
+            <button type="button" data-qty="1" aria-label="One more box">+</button>
+          </span>
+          <button class="add-btn" id="addPuffs" type="button"><span>Add to box</span><span class="brush">馬</span></button>
+        </div>
+        <p class="note" style="margin-top:12px">Minimum order 3 boxes — the same rule as our own online shop. Six or more ship free.</p>
+      </div>
+    </article>
+
+    <article class="p-card">
+      <figure><img src="assets/img/almond.jpg" alt="Almond cookies beside the Queen's Bakery almond cookie box"></figure>
+      <div class="p-card__body">
+        <h3>Almond Cookies <span class="cn">杏仁餅</span></h3>
+        <p>The famous red-striped box. Crisp, golden, full of almond — the gift every elder actually wants.</p>
+        <div class="p-card__tags"><span class="hot">Not for delivery</span><span>Best seller</span></div>
+        <div class="p-card__foot">
+          <span class="price">$9.50*</span>
+          <a class="call-btn" href="https://maps.google.com/?cid=10081724255272147053" target="_blank" rel="noopener"><span>Visit the store</span></a>
+        </div>
+        <p class="note" style="margin-top:12px">Almond cookies are never shipped. Pick them up at 809 N Broadway.</p>
+      </div>
+    </article>
+
+    <article class="p-card">
+      <figure><img src="assets/img/custard-bread.jpg" alt="Egg custard bread split open showing the custard inside"></figure>
+      <div class="p-card__body">
+        <h3>Egg Custard Bread</h3>
+        <p>One of our most popular sweet breads — look at that custard. A snack for the day, every day.</p>
+        <div class="p-card__tags"><span>Fresh daily</span><span>Store only</span></div>
+        <div class="p-card__foot"><span class="price">$3.00*</span></div>
+      </div>
+    </article>
+
+    <article class="p-card">
+      <figure><img src="assets/img/cream-puff.jpg" alt="Cream puff dusted with powdered sugar"></figure>
+      <div class="p-card__body">
+        <h3>Cream Puffs</h3>
+        <p>One of our favourite desserts — a crackly shell under powdered sugar, cream all the way through.</p>
+        <div class="p-card__tags"><span>Fresh daily</span><span>Cafe favourite</span></div>
+        <div class="p-card__foot"><span class="price"><small>In store</small></span></div>
+      </div>
+    </article>
+
+    <article class="p-card">
+      <figure><img src="assets/img/shortcake.jpg" alt="A slice of strawberry shortcake topped with a whole strawberry"></figure>
+      <div class="p-card__body">
+        <h3>Strawberry Shortcake</h3>
+        <p>Soft sponge, fresh cream, strawberries in every layer. By the slice, or take the whole cake.</p>
+        <div class="p-card__tags"><span>By the slice</span><span>Whole cakes</span></div>
+        <div class="p-card__foot"><span class="price"><small>In store</small></span></div>
+      </div>
+    </article>
+
+    <article class="p-card">
+      <figure><img src="assets/img/bread-coconut.jpg" alt="Coconut cream bread cut in half"></figure>
+      <div class="p-card__body">
+        <h3>Coconut Cream Bread</h3>
+        <p>Our children's favourite. Fluffy bread on the outside, a little coconut cream in the middle.</p>
+        <div class="p-card__tags"><span>Fresh daily</span><span>Store only</span></div>
+        <div class="p-card__foot"><span class="price"><small>In store</small></span></div>
+      </div>
+    </article>
+
+    <article class="p-card">
+      <figure><img src="assets/img/mooncake.jpg" alt="A single Queen's Bakery mooncake on floral paper"></figure>
+      <div class="p-card__body">
+        <h3>Mooncakes <span class="cn">月餅</span></h3>
+        <p>White lotus paste, lotus with yolk, mixed nuts, red bean — baked for Mid-Autumn, boxed in red and gold.</p>
+        <div class="p-card__tags"><span class="hot">Seasonal</span><span>Store only</span></div>
+        <div class="p-card__foot"><span class="price">$8.75*</span><span class="note">Red bean</span></div>
+      </div>
+    </article>
+
+    <article class="p-card">
+      <figure><img src="assets/img/cake-fruit.jpg" alt="Fruit numeral birthday cake covered in berries"></figure>
+      <div class="p-card__body">
+        <h3>Custom Birthday Cakes</h3>
+        <p>Fresh fruit cakes for any occasion — fresh, and not too sweet. Numbers, themes, even your photo printed on top.</p>
+        <div class="p-card__tags"><span>Order ahead</span><span>By phone</span></div>
+        <div class="p-card__foot">
+          <span class="price">from $25*</span>
+          <a class="call-btn" href="tel:+12136229749"><span>Call to order</span></a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <p class="note shop-note">* Prices marked with a star were read from price signs in photos taken inside the store (2024–2026). Please call <a href="tel:+12136229749">+1 213-622-9749</a> to confirm today's price. The rice puff price, minimum and free-shipping rule are from the bakery's own online shop.</p>
+
+  <section class="ship-sec">
+    <p class="sec__kick">Shipping</p>
+    <h2 class="sec__title" style="margin-top:14px">Simple, <em>the bakery way</em></h2>
+    <div class="ship-grid">
+      <div class="ship-card"><b>3</b><h3>Box minimum</h3><p>Online orders start at three boxes of rice puffs — the bakery's own rule.</p></div>
+      <div class="ship-card"><b>6+</b><h3>Free shipping</h3><p>Order six boxes or more and shipping is free, anywhere they travel.</p></div>
+      <div class="ship-card"><b>809</b><h3>Everything else, in store</h3><p>Almond cookies are never shipped. Tarts, puffs and cakes wait at 809 N Broadway, daily 8:30–6:30.</p></div>
     </div>
   </section>
 </main>
 
 <footer class="footer" id="visit">
-  <div class="footer__art" aria-hidden="true">
-    <svg viewBox="0 0 500 600" preserveAspectRatio="xMaxYMax meet">
-      <circle cx="392" cy="86" r="64" fill="#d62828"/>
-      <path d="M420 600 C414 500 398 430 366 372 C344 332 314 306 272 288 C314 298 348 320 378 352 C388 312 386 272 366 236 C402 272 418 314 422 360 C438 308 470 272 522 250 L560 250 L560 600 Z" fill="#2e2422" transform="translate(-60,0)"/>
-      <g fill="#db5b7f"><circle cx="290" cy="272" r="26"/><circle cx="340" cy="238" r="32"/><circle cx="396" cy="252" r="28"/><circle cx="440" cy="290" r="24"/><circle cx="366" cy="300" r="22"/></g>
-      <g fill="#efa9bf"><circle cx="318" cy="262" r="15"/><circle cx="404" cy="282" r="14"/><circle cx="452" cy="316" r="12"/></g>
-    </svg>
+  <a class="footer__cta" href="index.html">
+    <span class="kick">Back to the bakery</span>
+    <h2>Get the<br><em>crowning touch</em></h2>
+    <img class="footer__crown" src="assets/img/queens-logo.png" alt="" aria-hidden="true">
+  </a>
+  <div class="footer__grid">
+    <div class="footer__brand">
+      <img src="assets/img/queens-logo.png" alt="Queen's Bakery crown logo">
+      <p>皇后餅家 — Chinatown's bakery since 1961. The Crowning Touch.</p>
+    </div>
+    <nav aria-label="Pages">
+      <h4>Pages</h4>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="index.html#about">About Us</a>
+      <a href="mailto:queensbakery.onlinesales@gmail.com">Let's Talk</a>
+    </nav>
+    <nav aria-label="Famous for">
+      <h4>Famous For</h4>
+      <a href="index.html#puffs">Rice Puffs</a>
+      <a href="index.html#famous">Almond Cookies</a>
+      <a href="index.html#cakes">Custom Cakes</a>
+      <a href="index.html#mooncakes">Mooncakes</a>
+    </nav>
+    <div>
+      <h4>Visit</h4>
+      <p>809 N Broadway<br>Los Angeles, CA 90012<br><a href="tel:+12136229749">+1 (213) 622-9749</a><br><a href="mailto:queensbakery.onlinesales@gmail.com">queensbakery.onlinesales@gmail.com</a></p>
+    </div>
   </div>
-  <div class="footer__content">
-    <div class="footer__text">
-      <a class="footer__text-link" href="index.html">
-        <h2 class="footer__headline"><span>Still thinking</span><span>about dessert?</span><em>let's make it royal</em></h2>
-      </a>
-    </div>
-    <div class="footer__navigation">
-      <nav class="navigation" aria-label="Pages">
-        <h3 class="navigation__title">Pages</h3>
-        <ul class="navigation__group">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="index.html#about">About Us</a></li>
-          <li><a href="mailto:queensbakery.onlinesales@gmail.com">Let's Talk</a></li>
-        </ul>
-      </nav>
-      <nav class="navigation" aria-label="Specialties">
-        <h3 class="navigation__title">Specialties</h3>
-        <ul class="navigation__group">
-          <li><a href="index.html#poster-rice-puffs">Rice Puffs</a></li>
-          <li><a href="index.html#poster-almond-cookies">Almond Cookies</a></li>
-          <li><a href="index.html#poster-cakes">Custom Cakes</a></li>
-          <li><a href="index.html#poster-fresh-daily">Fresh Daily</a></li>
-        </ul>
-      </nav>
-      <div class="navigation">
-        <h3 class="navigation__title">Contact</h3>
-        <address class="navigation__group">
-          <a href="mailto:queensbakery.onlinesales@gmail.com">queensbakery.onlinesales@gmail.com</a>
-          <a href="tel:+12136229749">+1 (213) 622-9749</a>
-          <span>809 N Broadway, Los Angeles, CA 90012</span>
-        </address>
-      </div>
-    </div>
-    <div class="footer__legal">
-      <ul class="footer__privacy">
-        <li><a href="https://maps.google.com/?cid=10081724255272147053" target="_blank" rel="noopener">Directions</a></li>
-        <li><a href="https://www.queensbakeryla.com/shipping-status" target="_blank" rel="noopener">Shipping Status</a></li>
-        <li>Open daily 8:30 AM – 6:30 PM</li>
-      </ul>
-    </div>
+  <div class="footer__legal">
+    <a href="https://maps.google.com/?cid=10081724255272147053" target="_blank" rel="noopener">Directions</a>
+    <a href="https://www.queensbakeryla.com/shipping-status" target="_blank" rel="noopener">Shipping Status</a>
+    <span>Open daily 8:30 AM – 6:30 PM</span>
   </div>
 </footer>
 
@@ -235,7 +207,7 @@
 <div class="cart-backdrop" id="cartBackdrop"></div>
 <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
   <div class="cart-drawer__head">
-    <h2>Your box</h2>
+    <h2>Your box <span>餅家</span></h2>
     <button class="cart-close" id="cartClose" type="button" aria-label="Close cart">✕</button>
   </div>
   <div class="cart-items" id="cartItems"></div>
@@ -246,9 +218,9 @@
   <div class="cart-foot">
     <div class="cart-total"><span>Subtotal</span><span id="cartSubtotal">$0.00</span></div>
     <div class="cart-ship"><span>Shipping</span><span id="cartShipping">—</span></div>
-    <button class="add-btn checkout-btn" id="checkoutBtn" type="button"><span class="label">Order by email</span><span class="kanji">馬</span></button>
+    <button class="add-btn checkout-btn" id="checkoutBtn" type="button"><span>Order by email</span><span class="brush">馬</span></button>
     <p class="cart-msg" id="cartMsg"></p>
-    <p class="note">Checkout opens your email app with the order addressed to the bakery's online sales inbox — the same way their own shop takes online enquiries. Or call <a href="tel:+12136229749">+1 213-622-9749</a>.</p>
+    <p class="note">Checkout opens your email app with the order addressed to the bakery's online sales inbox — the same way their own shop takes online orders. Or call <a href="tel:+12136229749">+1 213-622-9749</a>.</p>
   </div>
 </aside>
 

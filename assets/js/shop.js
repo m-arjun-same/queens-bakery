@@ -34,7 +34,7 @@
     } else {
       itemsEl.innerHTML =
         '<div class="cart-line">' +
-          '<img src="assets/img/queens-2-web.jpg" alt="Rice puff box">' +
+          '<img src="assets/img/puffs.jpg" alt="Rice puffs">' +
           '<div><div class="cart-line__name">Original Chinese Rice Puffs</div>' +
           '<div class="cart-line__price">' + money(PRICE) + ' / box · 12 oz</div></div>' +
           '<span class="qty"><button type="button" id="lineMinus" aria-label="One less">−</button><output>' + cart + '</output><button type="button" id="linePlus" aria-label="One more">+</button></span>' +
