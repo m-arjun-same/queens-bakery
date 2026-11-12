@@ -10,13 +10,24 @@
 </head>
 <body>
 
+<div class="petals" aria-hidden="true">
+  <i style="left:6%;animation-duration:13s;animation-delay:-2s"></i>
+  <i style="left:18%;animation-duration:17s;animation-delay:-9s;width:10px;height:8px"></i>
+  <i style="left:33%;animation-duration:15s;animation-delay:-5s"></i>
+  <i style="left:47%;animation-duration:19s;animation-delay:-12s;width:11px;height:9px"></i>
+  <i style="left:61%;animation-duration:14s;animation-delay:-7s"></i>
+  <i style="left:74%;animation-duration:18s;animation-delay:-3s;width:10px;height:8px"></i>
+  <i style="left:86%;animation-duration:16s;animation-delay:-11s"></i>
+  <i style="left:95%;animation-duration:20s;animation-delay:-6s;width:9px;height:7px"></i>
+</div>
+
 <header class="header" id="siteHeader">
   <div class="header__in">
     <a class="header__brand" href="index.html" aria-label="Queen's Bakery — home">
       <img src="assets/img/queens-logo.png" alt="Queen's Bakery crown logo">
       <span><b>Queen's Bakery</b><small>Chinatown · Est. 1961</small></span>
     </a>
-    <nav class="header__nav" aria-label="Main">
+    <nav class="header__nav" id="headerNav" aria-label="Main">
       <a href="index.html">Home</a>
       <a href="#famous">Famous For</a>
       <a href="shop.html">Shop</a>
@@ -42,30 +53,30 @@
 </div>
 
 <main>
-  <!-- HERO : THE LID -->
+  <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero__brush" aria-hidden="true">皇后餅家<span class="seal">皇</span></div>
     <div class="hero__grid">
       <div>
-        <p class="hero__eyebrow">809 N Broadway · Chinatown · Los Angeles</p>
+        <p class="hero__eyebrow" data-load style="--i:0">809 N Broadway · Chinatown · Los Angeles</p>
         <h1>
-          <span class="line">The</span>
-          <span class="line">Crowning</span>
-          <span class="line">Touch <span class="accent">on</span></span>
-          <span class="line"><span class="hero__rotator"><span class="w" id="rotWord">rice puffs</span></span></span>
+          <span class="line"><span class="li">The</span></span>
+          <span class="line"><span class="li">Crowning</span></span>
+          <span class="line"><span class="li">Touch <span class="accent">on</span></span></span>
+          <span class="line"><span class="li"><span class="hero__rotator"><span class="w" id="rotWord">rice puffs</span></span></span></span>
         </h1>
-        <p class="hero__sub">A Chinatown bakery since 1961. Almond cookies that melt, custard breads still warm, fruit cakes made to order — and the rice puffs Los Angeles grew up on.</p>
-        <div class="hero__cta">
+        <p class="hero__sub" data-load style="--i:5">A Chinatown bakery since 1961. Almond cookies that melt, custard breads still warm, fruit cakes made to order — and the rice puffs Los Angeles grew up on.</p>
+        <div class="hero__cta" data-load style="--i:6">
           <a class="btn" href="shop.html"><span>Shop the puffs</span><span class="brush">馬</span></a>
           <a class="btn btn--ghost" href="tel:+12136229749"><span>Call the bakery</span></a>
         </div>
-        <div class="hero__meta">
+        <div class="hero__meta" data-load style="--i:7">
           <span><b>4.4★</b> on Google</span>
           <span><b>Since</b> 1961</span>
           <span><b>Open</b> every day</span>
         </div>
       </div>
-      <div class="hero__photo">
+      <div class="hero__photo" data-load style="--i:3">
         <div class="hero__tag"><small>The famous box</small><b>Since 1961</b></div>
         <div class="hero__arch"><img id="heroImg" src="assets/img/box.jpg" alt="Queen's Bakery box — The Crowning Touch"></div>
         <span class="seal hero__stamp">皇后</span>
@@ -74,15 +85,20 @@
     <div class="hero__scroll"><span>Scroll — open the box</span><span class="bar"><i></i></span><span>皇后餅家</span></div>
   </section>
 
-  <!-- FAMOUS FOUR -->
-  <section class="sec" id="famous">
+  <!-- FAMOUS FOUR (clients arrangement: poster left, title right) -->
+  <section class="sec famous" id="famous">
     <div class="sec__in">
-      <div class="sec__head" data-reveal>
-        <div>
-          <p class="sec__kick">Famous for</p>
-          <h2 class="sec__title">The four <em>everyone</em><br>asks for</h2>
+      <div class="famous-head">
+        <div class="reel" data-reveal>
+          <img src="assets/img/toast.jpg" alt="Coconut raisin toast, fresh from the counter">
+          <span class="reel__label">The counter · Est. 1961</span>
+          <span class="seal reel__seal">皇</span>
         </div>
-        <p class="sec__note">Sixty-five years of regulars can't be wrong. These are the bakes that built the name — touch one to look closer.</p>
+        <div class="famous-head__r">
+          <p class="sec__kick">Famous for</p>
+          <h2 class="sec__title" data-lm><span class="lm"><span class="li">The four <em>everyone</em></span></span><span class="lm"><span class="li">asks for</span></span></h2>
+          <p class="sec__note">Sixty-five years of regulars can't be wrong. These are the bakes that built the name — touch one to look closer.</p>
+        </div>
       </div>
       <div class="four" data-reveal>
         <article class="four__band is-active" data-band tabindex="0">
@@ -107,106 +123,113 @@
         </article>
       </div>
     </div>
+    <span class="seal famous__bleed" aria-hidden="true">皇后</span>
   </section>
 
-  <!-- CHAPTER 1 : RICE PUFFS -->
-  <section class="chapter chapter--red" id="puffs">
-    <div class="chapter__ghost" data-ghost aria-hidden="true">西騎馬 · RICE PUFFS · 西騎馬</div>
-    <div class="chapter__in">
-      <div data-reveal>
-        <p class="chapter__kick">Chapter 01 — The signature</p>
-        <h2>One box,<br><em>sixty-five years</em><br>of Chinatown</h2>
-        <p class="lead">Our Original Chinese Rice Puffs are the bake we are known for — made the same way since 1961, boxed under the crown, and shipped to doorsteps everywhere. Order six boxes and the shipping is on us.</p>
-        <div class="chapter__facts">
-          <div class="fact"><b>$10.25</b><span>Per box · online</span></div>
-          <div class="fact"><b>3 boxes</b><span>Minimum order</span></div>
-          <div class="fact"><b>6+</b><span>Free shipping</span></div>
-        </div>
-        <div class="chapter__cta">
-          <a class="btn btn--gold" href="shop.html"><span>Order rice puffs</span><span class="brush">馬</span></a>
-          <a class="btn btn--ghost" style="color:#fdf3e3;border-color:#fdf3e3" href="#faq"><span>How shipping works</span></a>
-        </div>
-      </div>
-      <div class="chapter__photo" data-reveal>
-        <img src="assets/img/puffs.jpg" alt="Rice puffs stacked high on a plate">
-        <span class="seal" style="right:22px;top:22px">馬</span>
-      </div>
-    </div>
-  </section>
+  <!-- POSTER STACK (services arrangement) -->
+  <div class="stack" id="stack">
 
-  <!-- CHAPTER 2 : CUSTOM CAKES -->
-  <section class="chapter chapter--cream" id="cakes">
-    <div class="chapter__ghost" data-ghost aria-hidden="true">CUSTOM CAKES · 蛋糕 · CUSTOM CAKES</div>
-    <div class="chapter__in">
-      <div class="fan" data-fan data-reveal aria-hidden="false">
-        <figure><img src="assets/img/cake-racing.jpg" alt="Two-tier racing car birthday cake"></figure>
-        <figure><img src="assets/img/cake-bluey.jpg" alt="Bluey birthday cake with name plaque"></figure>
-        <figure><img src="assets/img/cake-fruit.jpg" alt="Fruit numeral cake covered in fresh berries"></figure>
+    <section class="poster poster--red" id="puffs" data-poster>
+      <a class="btn btn--gold poster__cta" href="shop.html"><span>Order rice puffs</span><span class="brush">馬</span></a>
+      <div class="poster__blocks">
+        <div class="p-block"><b>$10.25</b><h3>The box</h3><p>Per box, online. 12 oz of the original, under the crown.</p></div>
+        <div class="p-block"><b>3 boxes</b><h3>The minimum</h3><p>Online orders start at three — the bakery's own rule.</p></div>
+        <div class="p-block"><b>6+</b><h3>Free shipping</h3><p>Six boxes or more and the shipping is on us.</p></div>
       </div>
-      <div data-reveal>
-        <p class="chapter__kick">Chapter 02 — Made to order</p>
-        <h2>Cakes for<br><em>your</em> occasion</h2>
-        <p class="lead">Fresh fruit cakes for any occasion — racing cars, Bluey, numbers covered in berries. Our cakes are known for being fresh and not too sweet. Tell us the party, we bake the centrepiece.</p>
-        <div class="chapter__facts">
-          <div class="fact"><b style="color:var(--red)">from $25*</b><span>Birthday cakes</span></div>
-          <div class="fact"><b style="color:var(--red)">1 call</b><span>To order</span></div>
-          <div class="fact"><b style="color:var(--red)">Any</b><span>Theme or photo</span></div>
-        </div>
-        <div class="chapter__cta">
-          <a class="btn" href="tel:+12136229749"><span>Call to order a cake</span><span class="brush">蛋</span></a>
-          <a class="btn btn--ghost" href="#shelf"><span>See the cakes</span></a>
-        </div>
-      </div>
-    </div>
-  </section>
+      <h2 class="poster__title" data-lm><span class="lm"><span class="li">Rice Puffs</span></span></h2>
+      <p class="poster__lead">Our Original Chinese Rice Puffs — 西騎馬 — made the same way since 1961, boxed in Chinatown and shipped to doorsteps everywhere.</p>
+      <div class="poster__band"><img src="assets/img/puffs.jpg" alt="Rice puffs stacked high on a plate"><span class="seal poster__seal">馬</span></div>
+    </section>
 
-  <!-- THE SHELF -->
-  <section class="sec shelf-sec" id="shelf" style="padding-left:0;padding-right:0">
-    <div class="sec__in" style="padding:0 var(--edge)">
-      <div class="sec__head" data-reveal>
+    <section class="poster poster--cream" id="cakes" data-poster>
+      <a class="btn poster__cta" href="tel:+12136229749"><span>Call to order</span><span class="brush">蛋</span></a>
+      <div class="poster__blocks">
+        <div class="p-block"><b>from $25*</b><h3>Birthday cakes</h3><p>Fresh fruit filled, known for being fresh and not too sweet.</p></div>
+        <div class="p-block"><b>1 call</b><h3>To order</h3><p>+1 213-622-9749. Tell us the party, we bake the centrepiece.</p></div>
+        <div class="p-block"><b>Any</b><h3>Theme or photo</h3><p>Racing cars, Bluey, berries — even your photo printed on top.</p></div>
+      </div>
+      <h2 class="poster__title" data-lm><span class="lm"><span class="li">Cakes</span></span></h2>
+      <p class="poster__lead">Custom cakes for every occasion, made to order at 809 N Broadway — numbers covered in berries, characters, tiers.</p>
+      <div class="poster__band"><img src="assets/img/cake-fruit.jpg" alt="Fruit numeral cake covered in fresh berries"><span class="seal poster__seal">蛋</span></div>
+    </section>
+
+    <section class="poster poster--dark" id="mooncakes" data-poster>
+      <a class="btn btn--gold poster__cta" href="https://www.instagram.com/queensbakeryla" target="_blank" rel="noopener"><span>Watch the season</span><span class="brush">月</span></a>
+      <div class="poster__blocks">
+        <div class="p-block"><b>$8.75*</b><h3>Red bean</h3><p>In store only, while the Mid-Autumn season lasts.</p></div>
+        <div class="p-block"><b>4</b><h3>Per gift box</h3><p>White lotus, lotus with yolk, mixed nuts and red bean.</p></div>
+        <div class="p-block"><b>Autumn</b><h3>The season</h3><p>When the moon is full, come early — they go fast.</p></div>
+      </div>
+      <h2 class="poster__title" data-lm><span class="lm"><span class="li">Mooncakes</span></span></h2>
+      <p class="poster__lead">Every Mid-Autumn Festival we bake mooncakes the Chinatown way, sealed in the red and gold gift box.</p>
+      <div class="poster__band"><img src="assets/img/mooncake-box.jpg" alt="Queen's Bakery mooncake gift box with four mooncakes"><span class="seal poster__seal">月</span></div>
+    </section>
+  </div>
+
+  <!-- WORK : postcard grid -->
+  <section class="sec cards-sec" id="shelf">
+    <div class="sec__in">
+      <div class="sec__head sec__head--center" data-reveal>
         <div>
           <p class="sec__kick">From the counter</p>
-          <h2 class="sec__title">The cake <em>shelf</em></h2>
+          <h2 class="sec__title" data-lm><span class="lm"><span class="li">The cake <em>shelf</em></span></span></h2>
         </div>
-        <p class="sec__note">Real cakes from our own kitchen, photographed by us and our customers. Drag the shelf.</p>
+        <p class="sec__note">Real cakes from our own kitchen, photographed by us and our customers.</p>
       </div>
-    </div>
-    <div class="shelf-wrap">
-      <div class="shelf" id="shelfRow">
-        <article class="shelf__card"><figure><img src="assets/img/shortcake.jpg" alt="A slice of strawberry shortcake with a whole strawberry"></figure><h3>Strawberry Shortcake</h3><p>The slice people cross Chinatown for.</p><span class="tag">By the slice · Whole</span></article>
-        <article class="shelf__card"><figure><img src="assets/img/cake-fruit.jpg" alt="Numeral cake covered in fresh fruit"></figure><h3>Fruit Numeral Cake</h3><p>Layers filled with fresh fruit, made for birthdays.</p><span class="tag">Custom order</span></article>
-        <article class="shelf__card"><figure><img src="assets/img/cake-racing.jpg" alt="Racing car birthday cake"></figure><h3>Racing Cake</h3><p>Chocolate on chocolate, with fresh strawberries.</p><span class="tag">Custom order</span></article>
-        <article class="shelf__card"><figure><img src="assets/img/cake-bluey.jpg" alt="Bluey birthday cake"></figure><h3>Bluey Cake</h3><p>For the seventh birthday that has to be perfect.</p><span class="tag">Custom order</span></article>
-        <article class="shelf__card"><figure><img src="assets/img/cake-beanie.jpg" alt="White winter beanie cake"></figure><h3>Winter Beanie Cake</h3><p>All whipped cream, knitted in frosting.</p><span class="tag">Custom order</span></article>
-        <article class="shelf__card"><figure><img src="assets/img/bread-coconut.jpg" alt="Coconut cream bread cut in half"></figure><h3>Coconut Cream Bread</h3><p>Fluffy outside, a little cream in the middle.</p><span class="tag">Fresh daily</span></article>
-        <article class="shelf__card"><figure><img src="assets/img/toast.jpg" alt="Coconut raisin toast slices"></figure><h3>Coconut Raisin Toast</h3><p>With a layer of cream cheese in the middle.</p><span class="tag">Fresh daily</span></article>
-        <article class="shelf__card"><figure><img src="assets/img/cake-nerf.jpg" alt="Nerf themed birthday cake"></figure><h3>Nerf Party Cake</h3><p>Chocolate below, strawberry shortcake on top.</p><span class="tag">Custom order</span></article>
-      </div>
-      <div class="shelf-line" aria-hidden="true"></div>
-      <p class="shelf__hint"><span>Drag →</span><span>@queensbakeryla</span></p>
-    </div>
-  </section>
-
-  <!-- CHAPTER 3 : MOONCAKES -->
-  <section class="chapter chapter--dark" id="mooncakes">
-    <div class="chapter__ghost" data-ghost aria-hidden="true">月餅 · MOONCAKES · 月餅</div>
-    <div class="chapter__in">
-      <div data-reveal>
-        <p class="chapter__kick">Chapter 03 — Mid-Autumn</p>
-        <h2>When the<br><em>moon</em> is full</h2>
-        <p class="lead">Every Mid-Autumn Festival we bake mooncakes the Chinatown way — white lotus paste, lotus with yolk, mixed nuts — sealed in the red and gold gift box. When the season comes, come early.</p>
-        <div class="chapter__facts">
-          <div class="fact"><b>$8.75*</b><span>Red bean · in store</span></div>
-          <div class="fact"><b>4</b><span>Cakes per gift box</span></div>
-          <div class="fact"><b>Autumn</b><span>Season only</span></div>
-        </div>
-        <div class="chapter__cta">
-          <a class="btn btn--gold" href="https://www.instagram.com/queensbakeryla" target="_blank" rel="noopener"><span>Watch for the season</span></a>
-        </div>
-      </div>
-      <div class="chapter__photo" data-reveal>
-        <img src="assets/img/mooncake-box.jpg" alt="Queen's Bakery mooncake gift box with four mooncakes">
-        <span class="seal" style="left:22px;bottom:22px">月</span>
+      <div class="cards">
+        <article class="card" data-reveal>
+          <span class="card__arrow" aria-hidden="true">↗</span>
+          <h3>Strawberry Shortcake</h3>
+          <p>Soft sponge, fresh cream, strawberries in every layer. The slice people cross Chinatown for.</p>
+          <div class="card__tags"><span>By the slice</span><span>Whole cakes</span></div>
+          <span class="card__seal">甜</span>
+          <figure><img src="assets/img/shortcake.jpg" alt="A slice of strawberry shortcake with a whole strawberry"></figure>
+        </article>
+        <article class="card" data-reveal>
+          <span class="card__arrow" aria-hidden="true">↗</span>
+          <h3>Fruit Numeral Cake</h3>
+          <p>Layers filled with fresh fruit, crowned with berries — made for birthdays.</p>
+          <div class="card__tags"><span>Custom order</span><span>Fresh fruit</span></div>
+          <span class="card__seal">蛋</span>
+          <figure><img src="assets/img/cake-fruit.jpg" alt="Numeral cake covered in fresh fruit"></figure>
+        </article>
+        <article class="card" data-reveal>
+          <span class="card__arrow" aria-hidden="true">↗</span>
+          <h3>Racing Cake</h3>
+          <p>Chocolate on chocolate with fresh strawberries, for the speed racer's birthday.</p>
+          <div class="card__tags"><span>Custom order</span><span>Chocolate</span></div>
+          <span class="card__seal">馬</span>
+          <figure><img src="assets/img/cake-racing.jpg" alt="Racing car birthday cake"></figure>
+        </article>
+        <article class="card" data-reveal>
+          <span class="card__arrow" aria-hidden="true">↗</span>
+          <h3>Bluey Cake</h3>
+          <p>For the seventh birthday that has to be exactly right.</p>
+          <div class="card__tags"><span>Custom order</span><span>Kids' themes</span></div>
+          <span class="card__seal">皇</span>
+          <figure><img src="assets/img/cake-bluey.jpg" alt="Bluey birthday cake"></figure>
+        </article>
+        <article class="card" data-reveal>
+          <span class="card__arrow" aria-hidden="true">↗</span>
+          <h3>Winter Beanie Cake</h3>
+          <p>All whipped cream, knitted in frosting. A winter favourite.</p>
+          <div class="card__tags"><span>Custom order</span><span>Whipped cream</span></div>
+          <span class="card__seal">后</span>
+          <figure><img src="assets/img/cake-beanie.jpg" alt="White winter beanie cake"></figure>
+        </article>
+        <article class="card" data-reveal>
+          <span class="card__arrow" aria-hidden="true">↗</span>
+          <h3>Nerf Party Cake</h3>
+          <p>Chocolate below, strawberry shortcake on top — a party in two tiers.</p>
+          <div class="card__tags"><span>Custom order</span><span>Two tiers</span></div>
+          <span class="card__seal">餅</span>
+          <figure><img src="assets/img/cake-nerf.jpg" alt="Nerf themed birthday cake"></figure>
+        </article>
+        <a class="card card--more" href="https://www.instagram.com/queensbakeryla" target="_blank" rel="noopener" data-reveal>
+          <span class="card--more__brush">更多</span>
+          <span class="card--more__en">— and more —</span>
+          <span class="card--more__at">@queensbakeryla</span>
+        </a>
       </div>
     </div>
   </section>
@@ -218,7 +241,7 @@
         <div class="about__photo" data-reveal><img src="assets/img/box.jpg" alt="The Queen's Bakery box with crown logo and The Crowning Touch"></div>
         <div data-reveal>
           <p class="sec__kick">About us</p>
-          <h2 style="margin-top:14px">A crown over<br><em>Broadway</em> since 1961</h2>
+          <h2 class="about__title" data-lm><span class="lm"><span class="li">A crown over</span></span><span class="lm"><span class="li"><em>Broadway</em> since 1961</span></span></h2>
           <p>Queen's Bakery — 皇后餅家 — has stood at 809 North Broadway, in the heart of Los Angeles Chinatown, since 1961. Six decades of almond cookies, rice puffs and birthday cakes, baked steps from where they're sold.</p>
           <p>Today the counter still opens at 8:30 every morning: breads and tarts fresh, cakes made to order, and boxes of rice puffs travelling to families all over the country. Specialty breads and desserts, fresh fruit filled cakes for any occasion — call to order.</p>
           <div class="hero__cta">
@@ -236,60 +259,61 @@
     </div>
   </section>
 
-  <!-- FAQ -->
+  <!-- FAQ : title left, tickets right -->
   <section class="sec faq-sec" id="faq">
     <div class="sec__in">
-      <div class="sec__head" data-reveal>
-        <div>
+      <div class="faq-grid">
+        <div class="faq-side" data-reveal>
           <p class="sec__kick">Good to know</p>
-          <h2 class="sec__title">Questions,<br><em>answered</em></h2>
+          <h2 class="sec__title" data-lm><span class="lm"><span class="li">Questions,</span></span><span class="lm"><span class="li"><em>answered</em></span></span></h2>
+          <p class="sec__note">The things people ask at the counter — and everyone ordering from far away.</p>
+          <span class="seal faq-side__seal">皇后</span>
         </div>
-        <p class="sec__note">The things people ask at the counter — and everyone ordering from far away.</p>
+        <div class="faq-list">
+          <div class="ticket is-open">
+            <button class="ticket__q" type="button" aria-expanded="true"><span class="ticket__no">01</span><h3>Where are you, and when are you open?</h3><span class="ticket__plus">+</span></button>
+            <div class="ticket__a"><div><p>809 North Broadway, Los Angeles, CA 90012 — the heart of Chinatown. Open every day, 8:30 AM to 6:30 PM. <a href="https://maps.google.com/?cid=10081724255272147053" target="_blank" rel="noopener">Get directions</a>.</p></div></div>
+          </div>
+          <div class="ticket">
+            <button class="ticket__q" type="button" aria-expanded="false"><span class="ticket__no">02</span><h3>What is Queen's Bakery famous for?</h3><span class="ticket__plus">+</span></button>
+            <div class="ticket__a"><div><p>Almond cookies and Chinese rice puffs first — then egg custard tarts and breads, cream puffs, strawberry shortcake, and custom cakes for every occasion.</p></div></div>
+          </div>
+          <div class="ticket">
+            <button class="ticket__q" type="button" aria-expanded="false"><span class="ticket__no">03</span><h3>What can I order online?</h3><span class="ticket__plus">+</span></button>
+            <div class="ticket__a"><div><p>The Original Chinese Rice Puffs — $10.25 a box, minimum 3 boxes. Order in our <a href="shop.html">shop</a> and we take it from there by email, the same way our own online orders have always worked.</p></div></div>
+          </div>
+          <div class="ticket">
+            <button class="ticket__q" type="button" aria-expanded="false"><span class="ticket__no">04</span><h3>How does shipping work?</h3><span class="ticket__plus">+</span></button>
+            <div class="ticket__a"><div><p>Order 6 boxes or more and shipping is free. Below that, we confirm the shipping cost with your order before anything is charged.</p></div></div>
+          </div>
+          <div class="ticket">
+            <button class="ticket__q" type="button" aria-expanded="false"><span class="ticket__no">05</span><h3>Can almond cookies be delivered?</h3><span class="ticket__plus">+</span></button>
+            <div class="ticket__a"><div><p>No — almond cookies are not available for delivery. They wait for you at the counter, 809 N Broadway, every day from 8:30 AM.</p></div></div>
+          </div>
+          <div class="ticket">
+            <button class="ticket__q" type="button" aria-expanded="false"><span class="ticket__no">06</span><h3>How do I order a custom cake?</h3><span class="ticket__plus">+</span></button>
+            <div class="ticket__a"><div><p>Call us on <a href="tel:+12136229749">+1 213-622-9749</a>. Tell us the occasion, the size and the theme — even a photo you want printed on the cake. Birthday cakes start from about $25*.</p></div></div>
+          </div>
+          <div class="ticket">
+            <button class="ticket__q" type="button" aria-expanded="false"><span class="ticket__no">07</span><h3>Do you bake mooncakes?</h3><span class="ticket__plus">+</span></button>
+            <div class="ticket__a"><div><p>Yes — every Mid-Autumn Festival: white lotus paste, lotus with yolk, mixed nuts and red bean, in the red and gold gift box. Seasonal, in store.</p></div></div>
+          </div>
+          <div class="ticket">
+            <button class="ticket__q" type="button" aria-expanded="false"><span class="ticket__no">08</span><h3>What should a first-time visitor try?</h3><span class="ticket__plus">+</span></button>
+            <div class="ticket__a"><div><p>A box of almond cookies for the road, an egg custard bread while it's warm, and a slice of strawberry shortcake. That is the Chinatown classic trio.</p></div></div>
+          </div>
+          <p class="note" style="margin-top:20px">* Prices marked with a star were read from price signs in photos taken inside the store (2024–2026). Please call <a href="tel:+12136229749">+1 213-622-9749</a> to confirm today's price. Photos on this page are the bakery's own, from <a href="https://www.instagram.com/queensbakeryla" target="_blank" rel="noopener">@queensbakeryla</a>.</p>
+        </div>
       </div>
-      <div class="faq-list">
-        <div class="ticket is-open">
-          <button class="ticket__q" type="button" aria-expanded="true"><span class="ticket__no">01</span><h3>Where are you, and when are you open?</h3><span class="ticket__plus">+</span></button>
-          <div class="ticket__a"><div><p>809 North Broadway, Los Angeles, CA 90012 — the heart of Chinatown. Open every day, 8:30 AM to 6:30 PM. <a href="https://maps.google.com/?cid=10081724255272147053" target="_blank" rel="noopener">Get directions</a>.</p></div></div>
-        </div>
-        <div class="ticket">
-          <button class="ticket__q" type="button" aria-expanded="false"><span class="ticket__no">02</span><h3>What is Queen's Bakery famous for?</h3><span class="ticket__plus">+</span></button>
-          <div class="ticket__a"><div><p>Almond cookies and Chinese rice puffs first — then egg custard tarts and breads, cream puffs, strawberry shortcake, and custom cakes for every occasion.</p></div></div>
-        </div>
-        <div class="ticket">
-          <button class="ticket__q" type="button" aria-expanded="false"><span class="ticket__no">03</span><h3>What can I order online?</h3><span class="ticket__plus">+</span></button>
-          <div class="ticket__a"><div><p>The Original Chinese Rice Puffs — $10.25 a box, minimum 3 boxes. Order in our <a href="shop.html">shop</a> and we take it from there by email, the same way our own online orders have always worked.</p></div></div>
-        </div>
-        <div class="ticket">
-          <button class="ticket__q" type="button" aria-expanded="false"><span class="ticket__no">04</span><h3>How does shipping work?</h3><span class="ticket__plus">+</span></button>
-          <div class="ticket__a"><div><p>Order 6 boxes or more and shipping is free. Below that, we confirm the shipping cost with your order before anything is charged.</p></div></div>
-        </div>
-        <div class="ticket">
-          <button class="ticket__q" type="button" aria-expanded="false"><span class="ticket__no">05</span><h3>Can almond cookies be delivered?</h3><span class="ticket__plus">+</span></button>
-          <div class="ticket__a"><div><p>No — almond cookies are not available for delivery. They wait for you at the counter, 809 N Broadway, every day from 8:30 AM.</p></div></div>
-        </div>
-        <div class="ticket">
-          <button class="ticket__q" type="button" aria-expanded="false"><span class="ticket__no">06</span><h3>How do I order a custom cake?</h3><span class="ticket__plus">+</span></button>
-          <div class="ticket__a"><div><p>Call us on <a href="tel:+12136229749">+1 213-622-9749</a>. Tell us the occasion, the size and the theme — even a photo you want printed on the cake. Birthday cakes start from about $25*.</p></div></div>
-        </div>
-        <div class="ticket">
-          <button class="ticket__q" type="button" aria-expanded="false"><span class="ticket__no">07</span><h3>Do you bake mooncakes?</h3><span class="ticket__plus">+</span></button>
-          <div class="ticket__a"><div><p>Yes — every Mid-Autumn Festival: white lotus paste, lotus with yolk, mixed nuts and red bean, in the red and gold gift box. Seasonal, in store.</p></div></div>
-        </div>
-        <div class="ticket">
-          <button class="ticket__q" type="button" aria-expanded="false"><span class="ticket__no">08</span><h3>What should a first-time visitor try?</h3><span class="ticket__plus">+</span></button>
-          <div class="ticket__a"><div><p>A box of almond cookies for the road, an egg custard bread while it's warm, and a slice of strawberry shortcake. That is the Chinatown classic trio.</p></div></div>
-        </div>
-      </div>
-      <p class="note" style="margin-top:22px">* Prices marked with a star were read from price signs in photos taken inside the store (2024–2026). Please call <a href="tel:+12136229749">+1 213-622-9749</a> to confirm today's price. Photos on this page are the bakery's own, from <a href="https://www.instagram.com/queensbakeryla" target="_blank" rel="noopener">@queensbakeryla</a>.</p>
     </div>
   </section>
 </main>
 
 <!-- FOOTER -->
 <footer class="footer" id="visit">
+  <div class="footer__disc" aria-hidden="true"></div>
   <a class="footer__cta" href="shop.html">
-    <span class="kick">One last thing</span>
-    <h2>Get the<br><em>crowning touch</em></h2>
+    <h2><span class="fl">Still thinking</span><span class="fl">About dessert?</span><span class="fl">Taste the <em>crowning touch</em></span></h2>
     <img class="footer__crown" src="assets/img/queens-logo.png" alt="" aria-hidden="true">
   </a>
   <div class="footer__grid">
