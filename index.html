@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Queen's Bakery — Chinatown 皇后餅家 | Los Angeles</title>
+<meta name="description" content="Queen's Bakery, Chinatown, Los Angeles. Almond cookies, original Chinese rice puffs, egg custard tarts, cream puffs, strawberry shortcake and custom cakes. 809 N Broadway — open daily 8:30 AM to 6:30 PM.">
+<link rel="icon" href="assets/img/queens-logo.png">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  .bloom{transform-box:fill-box;transform-origin:center;animation:bloom-in 1.1s cubic-bezier(.2,.65,.3,1) both;animation-delay:var(--d,0s)}
+  @keyframes bloom-in{from{opacity:0;transform:scale(.2)}to{opacity:1;transform:scale(1)}}
+  .tree-sway{transform-origin:bottom center;animation:sway 9s ease-in-out infinite alternate}
+  @keyframes sway{from{transform:rotate(-.6deg)}to{transform:rotate(.6deg)}}
+</style>
+</head>
+<body>
+<div id="customCursor" aria-hidden="true"><span>View</span></div>
+
+<header class="header header--paper header--wide" id="siteHeader">
+  <div class="header__wrapper">
+    <nav aria-label="Main">
+      <a class="header__logo-container" href="index.html" aria-label="Queen's Bakery — home">
+        <img class="header__logo" src="assets/img/queens-logo.png" alt="Queen's Bakery crown logo">
+        <span class="header__wordmark">Queen's Bakery<small>Chinatown · 皇后餅家</small></span>
+      </a>
+      <div class="header__navigation">
+        <span class="nav-item"><a href="index.html">Home</a></span>
+        <span class="nav-item nav-item--has-dropdown">
+          <button class="nav-item__link" type="button" aria-haspopup="true">Specialties
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <div class="nav-dropdown__container">
+              <a class="nav-dropdown__item" href="#poster-rice-puffs"><span class="service-preview"><span class="service-preview__title">Rice Puffs</span><span class="service-preview__art"><img src="assets/img/queens-2-web.jpg" alt="Original Chinese Rice Puffs box"></span></span></a>
+              <a class="nav-dropdown__item" href="#poster-almond-cookies"><span class="service-preview service-preview--almond"><span class="service-preview__title">Almond Cookies</span><span class="service-preview__art"><img src="assets/img/almond-cookies.jpg" alt="Chinese almond cookies"></span></span></a>
+              <a class="nav-dropdown__item" href="#poster-cakes"><span class="service-preview service-preview--cakes"><span class="service-preview__title">Custom Cakes</span><span class="service-preview__art"><img src="assets/img/birthday-cake.jpg" alt="Fruit birthday cake"></span></span></a>
+              <a class="nav-dropdown__item" href="#poster-fresh-daily"><span class="service-preview service-preview--fresh"><span class="service-preview__title">Fresh Daily</span><span class="service-preview__art"><img src="assets/img/egg-tarts.jpg" alt="Egg custard tarts"></span></span></a>
+            </div>
+          </div>
+        </span>
+        <span class="nav-item"><a href="shop.html">Shop</a></span>
+        <span class="nav-item"><a href="#visit">Visit</a></span>
+        <span class="nav-item"><a href="#about">About Us</a></span>
+      </div>
+      <div class="header__right">
+        <span class="header__place">Los Angeles · Chinatown</span>
+        <a class="contact-postcard-cta" href="shop.html"><span class="contact-postcard-cta__label">Order</span><span class="contact-postcard-cta__kanji">餅</span></a>
+      </div>
+      <div class="header__navigation-mobile">
+        <button class="header__menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </div>
+  <div class="nav-dropdown-mobile" id="mobileMenu">
+    <div class="services-mobile__grid">
+      <a class="services-mobile__item" href="#poster-rice-puffs"><img class="services-mobile__art" src="assets/img/queens-2-web.jpg" alt=""><span class="services-mobile__title">Rice Puffs</span></a>
+      <a class="services-mobile__item services-mobile__item--almond" href="#poster-almond-cookies"><img class="services-mobile__art" src="assets/img/almond-cookies.jpg" alt=""><span class="services-mobile__title">Almond Cookies</span></a>
+      <a class="services-mobile__item services-mobile__item--cakes" href="#poster-cakes"><img class="services-mobile__art" src="assets/img/birthday-cake.jpg" alt=""><span class="services-mobile__title">Custom Cakes</span></a>
+      <a class="services-mobile__item services-mobile__item--fresh" href="#poster-fresh-daily"><img class="services-mobile__art" src="assets/img/egg-tarts.jpg" alt=""><span class="services-mobile__title">Fresh Daily</span></a>
+    </div>
+    <div class="nav-dropdown-mobile__links">
+      <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="#visit">Visit</a><a href="#about">About Us</a><a href="#faq">FAQ</a>
+    </div>
+    <a class="contact-postcard-cta" href="shop.html"><span class="contact-postcard-cta__label">Order</span><span class="contact-postcard-cta__kanji">餅</span></a>
+  </div>
+</header>
+
+<main class="home paper-page">
+
+  <!-- HERO -->
+  <div class="hero" id="hero">
+    <div class="hero__landscape"><img src="assets/img/queens-1-web.jpg" alt=""></div>
+    <div class="hero__artwork" aria-hidden="true">
+      <svg viewBox="0 0 600 800" width="100%" height="100%" preserveAspectRatio="xMidYMax meet">
+        <g class="tree-sway">
+          <path d="M300 800 C290 640 268 520 218 420 C190 364 150 330 96 306 C150 318 196 344 232 388 C246 340 244 288 218 236 C262 276 282 330 288 392 C306 330 344 282 404 254 C356 306 330 356 322 420 C368 372 428 348 496 348 C436 380 392 420 366 476 C350 560 322 680 316 800 Z" fill="#2e2422"/>
+          <g fill="#db5b7f">
+            <circle class="bloom" style="--d:.1s" cx="110" cy="290" r="34"/><circle class="bloom" style="--d:.3s" cx="160" cy="252" r="42"/><circle class="bloom" style="--d:.5s" cx="222" cy="222" r="38"/>
+            <circle class="bloom" style="--d:.2s" cx="286" cy="196" r="46"/><circle class="bloom" style="--d:.6s" cx="356" cy="222" r="40"/><circle class="bloom" style="--d:.4s" cx="420" cy="238" r="44"/>
+            <circle class="bloom" style="--d:.7s" cx="486" cy="300" r="36"/><circle class="bloom" style="--d:.25s" cx="196" cy="300" r="30"/><circle class="bloom" style="--d:.55s" cx="330" cy="286" r="34"/>
+            <circle class="bloom" style="--d:.8s" cx="440" cy="330" r="28"/><circle class="bloom" style="--d:.45s" cx="120" cy="338" r="24"/>
+          </g>
+          <g fill="#efa9bf">
+            <circle class="bloom" style="--d:.35s" cx="150" cy="272" r="22"/><circle class="bloom" style="--d:.65s" cx="258" cy="238" r="24"/><circle class="bloom" style="--d:.15s" cx="392" cy="262" r="22"/>
+            <circle class="bloom" style="--d:.75s" cx="470" cy="286" r="18"/><circle class="bloom" style="--d:.5s" cx="308" cy="316" r="18"/><circle class="bloom" style="--d:.9s" cx="90" cy="312" r="16"/>
+          </g>
+          <g fill="#f6cfda">
+            <circle class="bloom" style="--d:.6s" cx="216" cy="262" r="13"/><circle class="bloom" style="--d:.3s" cx="352" cy="300" r="12"/><circle class="bloom" style="--d:.85s" cx="428" cy="300" r="11"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="petals" data-petals aria-hidden="true"></div>
+    <div class="hero__spring" aria-hidden="true">
+      <div class="spring-calligraphy">皇后餅家<span class="seal">皇</span></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero-title">
+        <div class="hero-title__above" data-hero style="--i:0"><img src="assets/img/queens-logo.png" alt="Queen's Bakery — The Crowning Touch"></div>
+        <h1 class="hero-title__heading">
+          <span class="hero-title__line">Make your</span>
+          <span class="hero-title__line">
+            <span class="hero-title__word-mask"><span class="hero-title__word" id="rotWord">mornings</span></span>
+            <span class="hero-title__accent"><span class="hero-title__accent-text" id="rotAccent">sweet.</span></span>
+          </span>
+        </h1>
+      </div>
+      <p class="hero__description" data-hero style="--i:2">Almond cookies that melt in the mouth. Egg custard tarts still warm from the oven. Custom cakes with the crowning touch.</p>
+    </div>
+  </div>
+
+  <!-- CLIENTS → FAMOUS ALL OVER CHINATOWN -->
+  <section class="home-clients">
+    <div class="home-clients__head">
+      <figure class="home-clients__reel">
+        <img src="assets/img/queens-2-web.jpg" alt="Queen's Bakery rice puff box — The Crowning Touch">
+        <figcaption>The Crowning Touch</figcaption>
+      </figure>
+      <div class="home-clients__haiku" aria-hidden="true">西騎馬<span class="red">·</span>一九六一</div>
+      <h2 class="home-clients__title p-title" data-reveal>
+        <span class="p-title__line-mask" style="--line:1"><span>Loved all over</span></span>
+        <span class="p-title__line-mask" style="--line:2"><span>Chinatown</span></span>
+      </h2>
+    </div>
+    <div class="home-clients__layout">
+      <div class="home-clients__figure"><img src="assets/img/queens-logo.png" alt=""></div>
+      <div class="home-clients__logos">
+        <ul class="home-clients__grid">
+          <li class="home-clients__cell"><span class="home-clients__mark">Almond Cookies<small>杏仁餅</small></span></li>
+          <li class="home-clients__cell"><span class="home-clients__mark serif">Rice Puffs<small>西騎馬</small></span></li>
+          <li class="home-clients__cell"><span class="home-clients__mark italic">Egg Custard Tarts</span></li>
+          <li class="home-clients__cell"><span class="home-clients__mark kanit">Cream Puffs</span></li>
+          <li class="home-clients__cell"><span class="home-clients__mark italic">Strawberry Shortcake</span></li>
+          <li class="home-clients__cell"><span class="home-clients__mark">Custom Cakes</span></li>
+          <li class="home-clients__cell"><span class="home-clients__mark serif">Mooncakes</span></li>
+          <li class="home-clients__cell"><a class="home-clients__more" href="shop.html"><span class="home-clients__kanji">皇</span><span class="home-clients__more-label">and more</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES → THE FOUR POSTERS -->
+  <section class="services" aria-label="Specialties">
+    <ul class="services__list">
+
+      <li class="services__item" id="poster-rice-puffs">
+        <article class="service-poster">
+          <div class="service-poster__paper">
+            <h3 class="service-poster__title">Rice Puffs</h3>
+            <div class="service-poster__art">
+              <img class="service-poster__background" src="assets/img/queens-1-web.jpg" alt="">
+              <img class="service-poster__subject" src="assets/img/queens-2-web.jpg" alt="Original Chinese Rice Puffs with their Queen's Bakery box">
+            </div>
+            <div class="service-poster__copy">
+              <ul class="service-poster__features">
+                <li class="service-poster__feature">
+                  <p class="service-poster__metric"><span>1961</span><span class="service-poster__metric-label">baking since</span></p>
+                  <div class="service-poster__benefit"><h4>The original 西騎馬</h4><p>Fried flour and egg bound in simple syrup, finished with sesame and coconut.</p></div>
+                </li>
+                <li class="service-poster__feature">
+                  <p class="service-poster__metric"><span>$10<small>.25</small></span><span class="service-poster__metric-label">per box, online</span></p>
+                  <div class="service-poster__benefit"><h4>Ships to your door</h4><p>Our one online classic — order a minimum of three boxes from the shop.</p></div>
+                </li>
+                <li class="service-poster__feature">
+                  <p class="service-poster__metric"><span>6+</span><span class="service-poster__metric-label">boxes</span></p>
+                  <div class="service-poster__benefit"><h4>Free shipping</h4><p>Order six boxes or more and the shipping is on us.</p></div>
+                </li>
+              </ul>
+              <a class="service-poster__cta" href="shop.html"><span class="service-poster__cta-label">Order rice puffs</span><span class="service-poster__cta-kanji">馬</span></a>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="services__item" id="poster-almond-cookies">
+        <article class="service-poster service-poster--almond">
+          <div class="service-poster__paper">
+            <h3 class="service-poster__title">Almond Cookies</h3>
+            <div class="service-poster__art">
+              <img class="service-poster__background" src="assets/img/almond-cookies.jpg" alt="">
+              <img class="service-poster__subject" src="assets/img/almond-cookies.jpg" alt="Chinese almond cookies">
+            </div>
+            <div class="service-poster__copy">
+              <ul class="service-poster__features">
+                <li class="service-poster__feature">
+                  <p class="service-poster__metric"><span>$9<small>.50</small></span><span class="service-poster__metric-label">in store</span></p>
+                  <div class="service-poster__benefit"><h4>The famous box</h4><p>Crisp, golden and full of almond — the box Chinatown reaches for first.</p></div>
+                </li>
+                <li class="service-poster__feature">
+                  <p class="service-poster__metric"><span>809</span><span class="service-poster__metric-label">N Broadway</span></p>
+                  <div class="service-poster__benefit"><h4>Picked up in person</h4><p>Almond cookies are not available for delivery — they are a store visit.</p></div>
+                </li>
+                <li class="service-poster__feature">
+                  <p class="service-poster__metric"><span>4.4<small>★</small></span><span class="service-poster__metric-label">Google rating</span></p>
+                  <div class="service-poster__benefit"><h4>Loved locally</h4><p>Rated by the neighbourhood that has eaten here for decades.</p></div>
+                </li>
+              </ul>
+              <a class="service-poster__cta" href="https://maps.google.com/?cid=10081724255272147053" target="_blank" rel="noopener"><span class="service-poster__cta-label">Visit the store</span><span class="service-poster__cta-kanji">餅</span></a>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="services__item" id="poster-cakes">
+        <article class="service-poster service-poster--cakes">
+          <div class="service-poster__paper">
+            <h3 class="service-poster__title">Custom Cakes</h3>
+            <div class="service-poster__art">
+              <img class="service-poster__background" src="assets/img/shortcake.jpg" alt="">
+              <img class="service-poster__subject" src="assets/img/birthday-cake.jpg" alt="Fresh fruit birthday cake">
+            </div>
+            <div class="service-poster__copy">
+              <ul class="service-poster__features">
+                <li class="service-poster__feature">
+                  <p class="service-poster__metric"><span>$25</span><span class="service-poster__metric-label">from, in store</span></p>
+                  <div class="service-poster__benefit"><h4>Birthday cakes</h4><p>Fresh fruit cakes — praised as fresh, not too sweet, and delicious.</p></div>
+                </li>
+                <li class="service-poster__feature">
+                  <p class="service-poster__metric"><span>1</span><span class="service-poster__metric-label">phone call</span></p>
+                  <div class="service-poster__benefit"><h4>Order ahead</h4><p>Call the store, tell us the occasion, and we will bake for it.</p></div>
+                </li>
+                <li class="service-poster__feature">
+                  <p class="service-poster__metric"><span>7</span><span class="service-poster__metric-label">days a week</span></p>
+                  <div class="service-poster__benefit"><h4>Always baking</h4><p>Open every day from 8:30 in the morning to 6:30 at night.</p></div>
+                </li>
+              </ul>
+              <a class="service-poster__cta" href="tel:+12136229749"><span class="service-poster__cta-label">Order a cake</span><span class="service-poster__cta-kanji">蛋</span></a>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="services__item" id="poster-fresh-daily">
+        <article class="service-poster service-poster--fresh">
+          <div class="service-poster__paper">
+            <h3 class="service-poster__title">Fresh Daily</h3>
+            <div class="service-poster__art">
+              <img class="service-poster__background" src="assets/img/cream-puff.jpg" alt="">
+              <img class="service-poster__subject" src="assets/img/egg-tarts.jpg" alt="Egg custard tarts">
+            </div>
+            <div class="service-poster__copy">
+              <ul class="service-poster__features">
+                <li class="service-poster__feature">
+                  <p class="service-poster__metric"><span>$3<small>.00</small></span><span class="service-poster__metric-label">in store</span></p>
+                  <div class="service-poster__benefit"><h4>Morning breads</h4><p>Red bean and egg custard breads, straight from the morning trays.</p></div>
+                </li>
+                <li class="service-poster__feature">
+                  <p class="service-poster__metric"><span>$3<small>.25</small></span><span class="service-poster__metric-label">in store</span></p>
+                  <div class="service-poster__benefit"><h4>Wintermelon pastry</h4><p>Flaky pastry with a gentle wintermelon heart.</p></div>
+                </li>
+                <li class="service-poster__feature">
+                  <p class="service-poster__metric"><span>8:30</span><span class="service-poster__metric-label">AM, daily</span></p>
+                  <div class="service-poster__benefit"><h4>First trays out</h4><p>Doors open at 8:30 — the custard tarts go fast.</p></div>
+                </li>
+              </ul>
+              <a class="service-poster__cta" href="shop.html"><span class="service-poster__cta-label">See the shop</span><span class="service-poster__cta-kanji">茶</span></a>
+            </div>
+          </div>
+        </article>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- WORK → FROM OUR OVENS -->
+  <div class="home__content">
+    <section class="home-work">
+      <header class="home-work__heading">
+        <h2 class="home-work__title p-title" data-reveal>
+          <span class="p-title__line-mask" style="--line:1"><span>From our</span></span>
+          <span class="p-title__line-mask" style="--line:2"><span>ovens</span></span>
+        </h2>
+        <p class="home-work__intro">Cookies, tarts and cakes. A few of the bakes Chinatown has loved for decades.</p>
+      </header>
+      <div class="home-work__gallery">
+        <div class="home-work__flowers" aria-hidden="true">
+          <svg style="left:-4%;top:6%" width="340" height="340" viewBox="0 0 100 100"><g fill="#db5b7f" opacity=".35"><circle cx="30" cy="35" r="14"/><circle cx="52" cy="26" r="17"/><circle cx="70" cy="42" r="13"/><circle cx="46" cy="48" r="15"/></g></svg>
+          <svg style="right:-3%;bottom:4%" width="380" height="380" viewBox="0 0 100 100"><g fill="#db5b7f" opacity=".3"><circle cx="34" cy="40" r="15"/><circle cx="58" cy="28" r="18"/><circle cx="72" cy="50" r="12"/><circle cx="48" cy="56" r="14"/></g></svg>
+        </div>
+        <div class="home-work__grid">
+          <div class="home-work__item" style="--tile-column:1;--tile-row:4;--tile-span:9">
+            <a class="work-postcard" href="shop.html" data-cursor="Taste">
+              <span class="work-postcard__copy">
+                <span class="work-postcard__title"><span>Queen's Bakery: Rice Puffs</span><span class="arrow">↗</span></span>
+                <span class="work-postcard__description">The original Chinese rice puff — light, crisp and not greasy, boxed since 1961.</span>
+                <span class="work-postcard__scope"><li>Sachima 西騎馬</li><li>Ships nationwide</li><li>$10.25 a box</li></span>
+              </span>
+              <span class="work-postcard__art"><img class="work-postcard__background" src="assets/img/queens-1-web.jpg" alt="Queen's Bakery rice puffs"></span>
+            </a>
+          </div>
+          <div class="home-work__item" style="--tile-column:2;--tile-row:1;--tile-span:6">
+            <a class="work-postcard" href="shop.html" data-cursor="Taste">
+              <span class="work-postcard__copy">
+                <span class="work-postcard__title"><span>Almond Cookies</span><span class="arrow">↗</span></span>
+                <span class="work-postcard__description">Our best seller in its red-and-white box.</span>
+                <span class="work-postcard__scope"><li>In store</li><li>$9.50</li></span>
+              </span>
+              <span class="work-postcard__art"><img class="work-postcard__background" src="assets/img/almond-cookies.jpg" alt="Almond cookies"></span>
+            </a>
+          </div>
+          <div class="home-work__item" style="--tile-column:1;--tile-row:13;--tile-span:8">
+            <a class="work-postcard" href="shop.html" data-cursor="Taste">
+              <span class="work-postcard__copy">
+                <span class="work-postcard__title"><span>Egg Custard Tarts</span><span class="arrow">↗</span></span>
+                <span class="work-postcard__description">Silky custard in a flaky shell, best still warm.</span>
+                <span class="work-postcard__scope"><li>Fresh daily</li><li>In store</li></span>
+              </span>
+              <span class="work-postcard__art"><img class="work-postcard__background" src="assets/img/egg-tarts.jpg" alt="Egg custard tarts"></span>
+            </a>
+          </div>
+          <div class="home-work__item" style="--tile-column:2;--tile-row:12;--tile-span:9">
+            <a class="work-postcard" href="shop.html" data-cursor="Taste">
+              <span class="work-postcard__copy">
+                <span class="work-postcard__title"><span>Cream Puffs</span><span class="arrow">↗</span></span>
+                <span class="work-postcard__description">Light shells, generous cream — a Chinatown tea-time staple.</span>
+                <span class="work-postcard__scope"><li>Fresh daily</li><li>Cafe favourite</li></span>
+              </span>
+              <span class="work-postcard__art"><img class="work-postcard__background" src="assets/img/cream-puff.jpg" alt="Cream puff"></span>
+            </a>
+          </div>
+          <div class="home-work__item" style="--tile-column:1;--tile-row:21;--tile-span:8">
+            <a class="work-postcard" href="shop.html" data-cursor="Taste">
+              <span class="work-postcard__copy">
+                <span class="work-postcard__title"><span>Strawberry Shortcake</span><span class="arrow">↗</span></span>
+                <span class="work-postcard__description">The slice people cross Chinatown for.</span>
+                <span class="work-postcard__scope"><li>By the slice</li><li>Whole cakes</li></span>
+              </span>
+              <span class="work-postcard__art"><img class="work-postcard__background" src="assets/img/shortcake.jpg" alt="Strawberry shortcake"></span>
+            </a>
+          </div>
+          <div class="home-work__item" style="--tile-column:2;--tile-row:25;--tile-span:7">
+            <a class="work-postcard" href="tel:+12136229749" data-cursor="Call">
+              <span class="work-postcard__copy">
+                <span class="work-postcard__title"><span>Custom Birthday Cakes</span><span class="arrow">↗</span></span>
+                <span class="work-postcard__description">Fresh, not too sweet — order yours by phone.</span>
+                <span class="work-postcard__scope"><li>From $25</li><li>Order ahead</li></span>
+              </span>
+              <span class="work-postcard__art"><img class="work-postcard__background" src="assets/img/birthday-cake.jpg" alt="Fruit birthday cake"></span>
+            </a>
+          </div>
+          <div class="home-work__item" style="--tile-column:1;--tile-row:32;--tile-span:8">
+            <a class="work-postcard" href="shop.html" data-cursor="Taste">
+              <span class="work-postcard__copy">
+                <span class="work-postcard__title"><span>Mooncakes</span><span class="arrow">↗</span></span>
+                <span class="work-postcard__description">Red bean mooncakes for the Mid-Autumn Festival.</span>
+                <span class="work-postcard__scope"><li>Seasonal</li><li>$8.75</li></span>
+              </span>
+              <span class="work-postcard__art"><img class="work-postcard__background" src="assets/img/mooncakes.jpg" alt="Mooncake cut open"></span>
+            </a>
+          </div>
+          <div class="home-work__item" style="--tile-column:2;--tile-row:32;--tile-span:10">
+            <a class="work-postcard" href="shop.html" data-cursor="Taste">
+              <span class="work-postcard__copy">
+                <span class="work-postcard__title"><span>Wintermelon Pastry</span><span class="arrow">↗</span></span>
+                <span class="work-postcard__description">The gentle classic — flaky outside, soft wintermelon inside.</span>
+                <span class="work-postcard__scope"><li>In store</li><li>$3.25</li></span>
+              </span>
+              <span class="work-postcard__art"><img class="work-postcard__background" src="assets/img/wintermelon.jpg" alt="Wintermelon pastry"></span>
+            </a>
+          </div>
+          <div class="home-work__more" style="--more-column:1;--more-row:40;--more-span:2">
+            <a class="work-more" href="shop.html"><span class="work-more__kanji">皇</span><span class="work-more__label">Shop all</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM → ABOUT US -->
+    <section class="team" id="about">
+      <div class="team__cloudscape" aria-hidden="true">
+        <svg class="team__cloud" style="left:-5%;top:1%;width:90%" viewBox="0 0 600 200"><path d="M60 150c-30-40 10-84 52-78 10-34 62-50 92-26 22-26 74-22 90 6 34-12 72 14 70 44 26 6 34 36 18 54z" fill="#e9e3dc"/></svg>
+        <svg class="team__cloud" style="left:22.5%;top:40%;width:75%;transform:rotate(16deg)" viewBox="0 0 600 200"><path d="M60 150c-30-40 10-84 52-78 10-34 62-50 92-26 22-26 74-22 90 6 34-12 72 14 70 44 26 6 34 36 18 54z" fill="#e9e3dc"/></svg>
+        <svg class="team__cloud" style="left:24%;top:76%;width:70%" viewBox="0 0 600 200"><path d="M60 150c-30-40 10-84 52-78 10-34 62-50 92-26 22-26 74-22 90 6 34-12 72 14 70 44 26 6 34 36 18 54z" fill="#e9e3dc"/></svg>
+      </div>
+      <div class="team__title-mask">
+        <h2 class="team__title p-title" data-reveal>
+          <span class="p-title__line-mask" style="--line:1"><span>About us</span></span>
+        </h2>
+      </div>
+      <div class="user__container">
+        <article class="user">
+          <figure class="user__art"><img src="assets/img/queens-2-web.jpg" alt="Queen's Bakery rice puff box with plates of rice puffs"></figure>
+          <div class="user__copy">
+            <h3 class="user__name">Queen's Bakery</h3>
+            <ul class="user__position"><li>Chinatown</li><li>Los Angeles</li><li>皇后餅家</li></ul>
+            <p class="user__bio">A Chinese bakery, dessert shop and cafe at 809 North Broadway — the crowning touch of Chinatown. Families have come here for decades for almond cookies, rice puffs and cakes that are fresh and never too sweet. Rated 4.4 stars, and still inexpensive.</p>
+            <ul class="user__social">
+              <li><a href="https://www.instagram.com/queensbakeryla" target="_blank" rel="noopener" aria-label="Queen's Bakery on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="#202020" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="#202020" stroke="none"/></svg></a></li>
+              <li><a href="https://www.facebook.com/queensbakeryla" target="_blank" rel="noopener" aria-label="Queen's Bakery on Facebook"><svg viewBox="0 0 24 24" fill="#202020"><path d="M14 8h2.5V4.5H14A4.5 4.5 0 0 0 9.5 9v2.5H7V15h2.5v6H13v-6h2.5l.5-3.5h-3V9c0-.6.4-1 1-1z"/></svg></a></li>
+            </ul>
+          </div>
+        </article>
+        <article class="user user--rev">
+          <figure class="user__art"><img src="assets/img/queens-1-web.jpg" alt="Queen's Bakery rice puffs stacked beside their box"></figure>
+          <div class="user__copy">
+            <h3 class="user__name">The Crowning Touch</h3>
+            <ul class="user__position"><li>Rice puffs</li><li>Almond cookies</li><li>Custom cakes</li></ul>
+            <p class="user__bio">That is what the box promises — and what the bakery ships. The Original Chinese Rice Puffs are the one bake we send out: order three boxes or more online, and six boxes ship free. Everything else is waiting for you at the counter on Broadway.</p>
+            <ul class="user__social">
+              <li><a href="http://www.queensbakeryla.com/" target="_blank" rel="noopener" aria-label="Queen's Bakery website"><svg viewBox="0 0 24 24" fill="none" stroke="#202020" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.7 2.6 4 5.7 4 9s-1.3 6.4-4 9c-2.7-2.6-4-5.7-4-9s1.3-6.4 4-9z"/></svg></a></li>
+              <li><a href="mailto:queensbakery.onlinesales@gmail.com" aria-label="Email Queen's Bakery online sales"><svg viewBox="0 0 24 24" fill="none" stroke="#202020" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <!-- FAQ -->
+  <section class="service-faq" id="faq">
+    <div class="service-faq__head">
+      <h2 class="p-title p-title--section" data-reveal>
+        <span class="p-title__line-mask" style="--line:1"><span>Frequently</span></span>
+        <span class="p-title__line-mask" style="--line:2"><span>asked <em>questions</em></span></span>
+      </h2>
+      <div class="service-faq__omamori" aria-hidden="true">
+        <img src="assets/img/queens-logo.png" alt="">
+        <span class="brush-v">皇后餅家</span>
+        <span class="tagline">The Crowning Touch<br>809 N Broadway, Chinatown</span>
+      </div>
+    </div>
+    <ul class="service-faq__list faq">
+      <li class="faq__item">
+        <button class="faq__question" type="button" aria-expanded="false"><span>Where is Queen's Bakery, and when are you open?</span><svg class="faq__flower" viewBox="0 0 60 60" aria-hidden="true"><g fill="#db5b7f"><circle cx="30" cy="16" r="10"/><circle cx="44" cy="30" r="10"/><circle cx="30" cy="44" r="10"/><circle cx="16" cy="30" r="10"/></g><circle cx="30" cy="30" r="6" fill="#fcbf49"/></svg><span class="faq__icon"></span></button>
+        <div class="faq__answer"><div class="faq__answer-inner"><p>We are at 809 North Broadway, Los Angeles, CA 90012, in the heart of Chinatown. The store is open every day from 8:30 AM to 6:30 PM. <a href="https://maps.google.com/?cid=10081724255272147053" target="_blank" rel="noopener">Get directions</a>.</p></div></div>
+      </li>
+      <li class="faq__item">
+        <button class="faq__question" type="button" aria-expanded="false"><span>What is Queen's Bakery famous for?</span><svg class="faq__flower" viewBox="0 0 60 60" aria-hidden="true"><g fill="#db5b7f"><circle cx="30" cy="16" r="10"/><circle cx="44" cy="30" r="10"/><circle cx="30" cy="44" r="10"/><circle cx="16" cy="30" r="10"/></g><circle cx="30" cy="30" r="6" fill="#fcbf49"/></svg><span class="faq__icon"></span></button>
+        <div class="faq__answer"><div class="faq__answer-inner"><p>Almond cookies, the original Chinese rice puffs （西騎馬）, egg custard tarts, cream puffs, strawberry shortcake and custom cakes. See them all <a href="#poster-rice-puffs">in the specialties above</a>.</p></div></div>
+      </li>
+      <li class="faq__item">
+        <button class="faq__question" type="button" aria-expanded="false"><span>Can I order online?</span><svg class="faq__flower" viewBox="0 0 60 60" aria-hidden="true"><g fill="#db5b7f"><circle cx="30" cy="16" r="10"/><circle cx="44" cy="30" r="10"/><circle cx="30" cy="44" r="10"/><circle cx="16" cy="30" r="10"/></g><circle cx="30" cy="30" r="6" fill="#fcbf49"/></svg><span class="faq__icon"></span></button>
+        <div class="faq__answer"><div class="faq__answer-inner"><p>Yes — the Original Chinese Rice Puffs are sold in our <a href="shop.html">online shop</a> at $10.25 a box, with a minimum order of three boxes. Online enquiries go to <a href="mailto:queensbakery.onlinesales@gmail.com">queensbakery.onlinesales@gmail.com</a>.</p></div></div>
+      </li>
+      <li class="faq__item">
+        <button class="faq__question" type="button" aria-expanded="false"><span>How does shipping work?</span><svg class="faq__flower" viewBox="0 0 60 60" aria-hidden="true"><g fill="#db5b7f"><circle cx="30" cy="16" r="10"/><circle cx="44" cy="30" r="10"/><circle cx="30" cy="44" r="10"/><circle cx="16" cy="30" r="10"/></g><circle cx="30" cy="30" r="6" fill="#fcbf49"/></svg><span class="faq__icon"></span></button>
+        <div class="faq__answer"><div class="faq__answer-inner"><p>Order six boxes of rice puffs or more and shipping is free. Below six boxes, order at least three and shipping is calculated on your order.</p></div></div>
+      </li>
+      <li class="faq__item">
+        <button class="faq__question" type="button" aria-expanded="false"><span>Can you ship almond cookies?</span><svg class="faq__flower" viewBox="0 0 60 60" aria-hidden="true"><g fill="#db5b7f"><circle cx="30" cy="16" r="10"/><circle cx="44" cy="30" r="10"/><circle cx="30" cy="44" r="10"/><circle cx="16" cy="30" r="10"/></g><circle cx="30" cy="30" r="6" fill="#fcbf49"/></svg><span class="faq__icon"></span></button>
+        <div class="faq__answer"><div class="faq__answer-inner"><p>No — almond cookies are not available for delivery. They are worth the trip: pick them up at the store, 809 N Broadway, any day from 8:30 AM.</p></div></div>
+      </li>
+      <li class="faq__item">
+        <button class="faq__question" type="button" aria-expanded="false"><span>How do I order a custom cake?</span><svg class="faq__flower" viewBox="0 0 60 60" aria-hidden="true"><g fill="#db5b7f"><circle cx="30" cy="16" r="10"/><circle cx="44" cy="30" r="10"/><circle cx="30" cy="44" r="10"/><circle cx="16" cy="30" r="10"/></g><circle cx="30" cy="30" r="6" fill="#fcbf49"/></svg><span class="faq__icon"></span></button>
+        <div class="faq__answer"><div class="faq__answer-inner"><p>Call the retail store on <a href="tel:+12136229749">+1 213-622-9749</a> and tell us the occasion. Birthday and fruit cakes in store start from around $25.</p></div></div>
+      </li>
+      <li class="faq__item">
+        <button class="faq__question" type="button" aria-expanded="false"><span>How long has the bakery been making rice puffs?</span><svg class="faq__flower" viewBox="0 0 60 60" aria-hidden="true"><g fill="#db5b7f"><circle cx="30" cy="16" r="10"/><circle cx="44" cy="30" r="10"/><circle cx="30" cy="44" r="10"/><circle cx="16" cy="30" r="10"/></g><circle cx="30" cy="30" r="6" fill="#fcbf49"/></svg><span class="faq__icon"></span></button>
+        <div class="faq__answer"><div class="faq__answer-inner"><p>Since 1961 — the rice puff (Sachima) is the bake generations of Chinatown families grew up on, and it still goes into Lunar New Year tea sets across Los Angeles.</p></div></div>
+      </li>
+      <li class="faq__item">
+        <button class="faq__question" type="button" aria-expanded="false"><span>Is Queen's Bakery good for a first Chinatown visit?</span><svg class="faq__flower" viewBox="0 0 60 60" aria-hidden="true"><g fill="#db5b7f"><circle cx="30" cy="16" r="10"/><circle cx="44" cy="30" r="10"/><circle cx="30" cy="44" r="10"/><circle cx="16" cy="30" r="10"/></g><circle cx="30" cy="30" r="6" fill="#fcbf49"/></svg><span class="faq__icon"></span></button>
+        <div class="faq__answer"><div class="faq__answer-inner"><p>It is the classic stop — a bakery, dessert shop and cafe in one, rated 4.4 stars and inexpensive. Start with a box of almond cookies and a rice puff, and find us on Instagram at <a href="https://www.instagram.com/queensbakeryla" target="_blank" rel="noopener">@queensbakeryla</a>.</p></div></div>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" id="visit">
+  <div class="footer__art" aria-hidden="true">
+    <svg viewBox="0 0 500 600" preserveAspectRatio="xMaxYMax meet">
+      <circle cx="392" cy="86" r="64" fill="#d62828"/>
+      <path d="M420 600 C414 500 398 430 366 372 C344 332 314 306 272 288 C314 298 348 320 378 352 C388 312 386 272 366 236 C402 272 418 314 422 360 C438 308 470 272 522 250 L560 250 L560 600 Z" fill="#2e2422" transform="translate(-60,0)"/>
+      <g fill="#db5b7f"><circle cx="290" cy="272" r="26"/><circle cx="340" cy="238" r="32"/><circle cx="396" cy="252" r="28"/><circle cx="440" cy="290" r="24"/><circle cx="366" cy="300" r="22"/></g>
+      <g fill="#efa9bf"><circle cx="318" cy="262" r="15"/><circle cx="404" cy="282" r="14"/><circle cx="452" cy="316" r="12"/></g>
+    </svg>
+  </div>
+  <div class="footer__content">
+    <div class="footer__text">
+      <a class="footer__text-link" href="shop.html">
+        <h2 class="footer__headline"><span>Still thinking</span><span>about dessert?</span><em>let's make it royal</em></h2>
+      </a>
+    </div>
+    <div class="footer__navigation">
+      <nav class="navigation" aria-label="Pages">
+        <h3 class="navigation__title">Pages</h3>
+        <ul class="navigation__group">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="mailto:queensbakery.onlinesales@gmail.com">Let's Talk</a></li>
+        </ul>
+      </nav>
+      <nav class="navigation" aria-label="Specialties">
+        <h3 class="navigation__title">Specialties</h3>
+        <ul class="navigation__group">
+          <li><a href="#poster-rice-puffs">Rice Puffs</a></li>
+          <li><a href="#poster-almond-cookies">Almond Cookies</a></li>
+          <li><a href="#poster-cakes">Custom Cakes</a></li>
+          <li><a href="#poster-fresh-daily">Fresh Daily</a></li>
+        </ul>
+      </nav>
+      <div class="navigation">
+        <h3 class="navigation__title">Contact</h3>
+        <address class="navigation__group">
+          <a href="mailto:queensbakery.onlinesales@gmail.com">queensbakery.onlinesales@gmail.com</a>
+          <a href="tel:+12136229749">+1 (213) 622-9749</a>
+          <span>809 N Broadway, Los Angeles, CA 90012</span>
+        </address>
+        <ul class="navigation__social">
+          <li><a href="https://www.instagram.com/queensbakeryla" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="#202020" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="#202020" stroke="none"/></svg></a></li>
+          <li><a href="https://www.facebook.com/queensbakeryla" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="#202020"><path d="M14 8h2.5V4.5H14A4.5 4.5 0 0 0 9.5 9v2.5H7V15h2.5v6H13v-6h2.5l.5-3.5h-3V9c0-.6.4-1 1-1z"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <ul class="footer__privacy">
+        <li><a href="https://maps.google.com/?cid=10081724255272147053" target="_blank" rel="noopener">Directions</a></li>
+        <li><a href="https://www.queensbakeryla.com/shipping-status" target="_blank" rel="noopener">Shipping Status</a></li>
+        <li>Open daily 8:30 AM – 6:30 PM</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<a class="call-float" href="tel:+12136229749" aria-label="Call Queen's Bakery">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+</a>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
